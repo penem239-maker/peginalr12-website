@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LEGEND ARENA</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+<body>
+
+<!-- Navbar -->
+
+<header>
+
+<div class="logo">
+<i class="fa-solid fa-dragon"></i>
+Legend Arena
+</div>
+
+<nav>
+
+<a href="#">Home</a>
+<a href="#heroes">Heroes</a>
+<a href="#events">Events</a>
+<a href="#news">News</a>
+<a href="#gallery">Gallery</a>
+
+</nav>
+
+<a href="#" class="download-btn">
+Download
+</a>
+
+</header>
+
+<!-- Hero Banner -->
+
+<section class="hero">
+
+<div class="overlay"></div>
+
+<div class="hero-content">
+
+<h1>
+ENTER THE LEGENDARY BATTLE
+</h1>
+
+<p>
+Fight with powerful heroes, unlock magical skins,
+join epic battles and become the ultimate champion.
+</p>
+
+<div class="buttons">
+
+<a href="#" class="btn">
+Play Now
+</a>
+
+<a href="#" class="btn2">
+Watch Trailer
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Heroes -->
+
+<section class="heroes" id="heroes">
+
+<h2>Featured Heroes</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<img src="https://picsum.photos/300/400?random=1">
+
+<h3>Shadow Warrior</h3>
+
+<p>
+Fast assassin with deadly attacks.
+</p>
+
+</div>
+
+<div class="card">
+
+<img src="https://picsum.photos/300/400?random=2">
+
+<h3>Storm Mage</h3>
+
+<p>
+Master of thunder magic.
+</p>
+
+</div>
+
+<div class="card">
+
+<img src="https://picsum.photos/300/400?random=3">
+
+<h3>Fire Knight</h3>
+
+<p>
+Powerful tank with fire shield.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Events -->
+
+<section class="events" id="events">
+
+<h2>Latest Events</h2>
+
+<div class="event-box">
+
+<h3>Summer Championship</h3>
+
+<p>
+Join exciting tournaments and win exclusive rewards.
+</p>
+
+</div>
+
+<div class="event-box">
+
+<h3>New Hero Release</h3>
+
+<p>
+Experience the newest legendary warrior.
+</p>
+
+</div>
+
+</section>
+
+<!-- News -->
+
+<section class="news" id="news">
+
+<h2>Game News</h2>
+
+<div class="news-card">
+
+<h3>Version 2.0 Released</h3>
+
+<p>
+New heroes, better graphics, improved gameplay
+and exciting new maps.
+</p>
+
+</div>
+
+</section>
+
+<!-- Gallery -->
+
+<section class="gallery" id="gallery">
+
+<h2>Gallery</h2>
+
+<div class="gallery-grid">
+
+<img src="https://picsum.photos/400/300?random=4">
+
+<img src="https://picsum.photos/400/300?random=5">
+
+<img src="https://picsum.photos/400/300?random=6">
+
+<img src="https://picsum.photos/400/300?random=7">
+
+</div>
+
+</section>
+
+<!-- Footer -->
+
+<footer>
+
+<h2>Legend Arena</h2>
+
+<p>
+© 2026 All Rights Reserved
+</p>
+
+<div class="social">
+
+<i class="fab fa-facebook"></i>
+
+<i class="fab fa-instagram"></i>
+
+<i class="fab fa-youtube"></i>
+
+<i class="fab fa-discord"></i>
+
+</div>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>/* Google Font */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#050b18;
+    color:#fff;
+}
+
+/* Navbar */
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:18px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(0,0,0,.45);
+    backdrop-filter:blur(10px);
+    z-index:1000;
+}
+
+.logo{
+    color:#ffd700;
+    font-size:28px;
+    font-weight:700;
+}
+
+.logo i{
+    color:#00d4ff;
+    margin-right:8px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#fff;
+    margin:0 15px;
+    transition:.3s;
+    font-weight:500;
+}
+
+nav a:hover{
+    color:#ffd700;
+}
+
+.download-btn{
+    background:#ffd700;
+    color:#000;
+    text-decoration:none;
+    padding:12px 24px;
+    border-radius:30px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.download-btn:hover{
+    background:#00d4ff;
+    color:#fff;
+}
+
+/* Hero Section */
+
+.hero{
+    height:100vh;
+    background:url("https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=1600&q=80") center/cover;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.65);
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    max-width:800px;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:60px;
+    color:#ffd700;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:20px;
+    color:#ddd;
+    margin-bottom:35px;
+}
+
+.btn,
+.btn2{
+    display:inline-block;
+    padding:15px 35px;
+    border-radius:40px;
+    text-decoration:none;
+    font-weight:600;
+    margin:10px;
+    transition:.4s;
+}
+
+.btn{
+    background:#ffd700;
+    color:#000;
+}
+
+.btn:hover{
+    background:#00d4ff;
+    color:#fff;
+}
+
+.btn2{
+    border:2px solid #ffd700;
+    color:#ffd700;
+}
+
+.btn2:hover{
+    background:#ffd700;
+    color:#000;
+}
+
+/* Sections */
+
+section{
+    padding:90px 8%;
+}
+
+section h2{
+    text-align:center;
+    font-size:40px;
+    color:#ffd700;
+    margin-bottom:50px;
+}
+
+/* Hero Cards */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:#101b35;
+    border-radius:18px;
+    overflow:hidden;
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 25px #00d4ff;
+}
+
+.card img{
+    width:100%;
+    height:340px;
+    object-fit:cover;
+}
+
+.card h3{
+    padding:20px;
+    color:#ffd700;
+}
+
+.card p{
+    padding:0 20px 20px;
+    color:#bbb;
+}
+
+/* Events */
+
+.event-box{
+    background:#101b35;
+    padding:30px;
+    margin-bottom:25px;
+    border-left:5px solid #ffd700;
+    border-radius:10px;
+}
+
+/* News */
+
+.news-card{
+    background:#101b35;
+    padding:30px;
+    border-radius:12px;
+}
+
+/* Gallery */
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:20px;
+}
+
+.gallery-grid img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:15px;
+    transition:.4s;
+}
+
+.gallery-grid img:hover{
+    transform:scale(1.05);
+}
+
+/* Footer */
+
+footer{
+    background:#081120;
+    padding:40px;
+    text-align:center;
+}
+
+footer h2{
+    color:#ffd700;
+    margin-bottom:15px;
+}
+
+.social i{
+    margin:15px;
+    font-size:26px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.social i:hover{
+    color:#ffd700;
+    transform:scale(1.2);
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+    gap:15px;
+}
+
+nav{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.hero h1{
+    font-size:38px;
+}
+
+.hero p{
+    font-size:17px;
+}
+
+.download-btn{
+    padding:10px 20px;
+}
+
+}// Navbar background change on scroll
+
+window.addEventListener("scroll", function(){
+
+    const header = document.querySelector("header");
+
+    if(window.scrollY > 50){
+
+        header.style.background = "rgba(0,0,0,0.85)";
+
+    }else{
+
+        header.style.background = "rgba(0,0,0,0.45)";
+
+    }
+
+});
+
+
+// Smooth reveal animation for sections
+
+const sections = document.querySelectorAll("section");
+
+const reveal = () => {
+
+    sections.forEach(section => {
+
+        const top = section.getBoundingClientRect().top;
+
+        const screenHeight = window.innerHeight;
+
+        if(top < screenHeight - 100){
+
+            section.style.opacity = "1";
+            section.style.transform = "translateY(0)";
+
+        }
+
+    });
+
+};
+
+
+window.addEventListener("scroll", reveal);
+
+
+// Initial section animation style
+
+sections.forEach(section => {
+
+    section.style.opacity = "0";
+    section.style.transform = "translateY(50px)";
+    section.style.transition = "0.8s ease";
+
+});
+
+
+// Run once when page loads
+
+reveal();
+
+
+// Download button message
+
+const downloadBtn = document.querySelector(".download-btn");
+
+downloadBtn.addEventListener("click", function(e){
+
+    e.preventDefault();
+
+    alert("Your adventure is starting soon!");
+
+});
+
+
+// Play button effect
+
+const playBtn = document.querySelector(".btn");
+
+playBtn.addEventListener("click", function(e){
+
+    e.preventDefault();
+
+    alert("Welcome to Legend Arena!");
+
+});
+
+
+// Hero card click effect
+
+const cards = document.querySelectorAll(".card");
+
+cards.forEach(card => {
+
+    card.addEventListener("click", function(){
+
+        this.classList.toggle("active");
+
+    });
+
+});
+
+
+// Simple loading effect
+
+window.addEventListener("load",()=>{
+
+    document.body.style.opacity="1";
+
+});background:url("https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=1600&q=80") center/cover;
+          <img src="https://picsum.photos/300/400?random=1">
+          <img src="images/hero2.jpg">
+          <img src="images/hero3.jpg">
+          
